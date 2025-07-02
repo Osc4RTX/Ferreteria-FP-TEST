@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería Portuguesa - Tu Solución en Herramientas y Materiales</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+            color: #334155; /* Dark slate text */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .cta-button {
+            background-color: #ef4444; /* Red */
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px; /* Fully rounded */
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #dc2626; /* Darker red on hover */
+        }
+        .card {
+            background-color: white;
+            border-radius: 1.5rem; /* More rounded */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+        }
+        .section-title {
+            font-size: 2.5rem; /* Larger title */
+            font-weight: 700;
+            color: #1e293b; /* Darker title color */
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-gray-800">Ferretería Portuguesa</a>
+            <!-- Navigation (Hidden on small screens, shown on medium and up) -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#servicios" class="text-gray-600 hover:text-red-600 font-medium transition-colors duration-300">Servicios</a>
+                <a href="#productos" class="text-gray-600 hover:text-red-600 font-medium transition-colors duration-300">Productos</a>
+                <a href="#nosotros" class="text-gray-600 hover:text-red-600 font-medium transition-colors duration-300">Nosotros</a>
+                <a href="#contacto" class="text-gray-600 hover:text-red-600 font-medium transition-colors duration-300">Contacto</a>
+            </nav>
+            <!-- Mobile Menu Button (Hamburger Icon) -->
+            <button class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section with Prominent CTA -->
+    <section class="bg-gradient-to-r from-red-600 to-red-800 text-white py-20 md:py-32 text-center relative overflow-hidden rounded-b-3xl">
+        <div class="container relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                Todo lo que Necesitas para tus Proyectos
+            </h1>
+            <p class="text-lg md:text-2xl mb-10 opacity-90 animate-fade-in">
+                Encuentra las herramientas y materiales de calidad que tu hogar o negocio merece.
+            </p>
+            <!-- CTA Button -->
+            <a href="#contacto" class="cta-button inline-block text-xl md:text-2xl animate-bounce-in">
+                ¡Pide tu Cotización Ahora!
+            </a>
+        </div>
+        <!-- Background elements for visual appeal -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" fill="currentColor" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <pattern id="pattern-circles" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                    <circle cx="5" cy="5" r="1" fill="white" />
+                </pattern>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-circles)" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-16 md:py-24 bg-white">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios Destacados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="card text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-red-500 mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Asesoría Especializada</h3>
+                    <p class="text-gray-600">Te ayudamos a elegir los productos perfectos para cada tipo de proyecto.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="card text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-red-500 mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4m0-10h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Amplio Stock</h3>
+                    <p class="text-gray-600">Disponibilidad inmediata de una gran variedad de herramientas y materiales.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="card text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-red-500 mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10v11l6-3 6 3 6-3V10M3 10h18"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Precios Competitivos</h3>
+                    <p class="text-gray-600">La mejor relación calidad-precio en todos nuestros productos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="productos" class="py-16 md:py-24 bg-gray-50">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos Más Populares</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product Card 1 -->
+                <div class="card text-center">
+                    <img src="https://placehold.co/300x200/ef4444/ffffff?text=Taladro" alt="Taladro" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Taladro Percutor</h3>
+                    <p class="text-gray-600 text-sm">Ideal para trabajos en concreto y mampostería.</p>
+                    <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm hover:bg-red-600 transition-colors duration-300">Ver Detalles</button>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="card text-center">
+                    <img src="https://placehold.co/300x200/ef4444/ffffff?text=Set+Herramientas" alt="Set de Herramientas" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Set de Herramientas Básico</h3>
+                    <p class="text-gray-600 text-sm">Indispensable para cualquier hogar o taller.</p>
+                    <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm hover:bg-red-600 transition-colors duration-300">Ver Detalles</button>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="card text-center">
+                    <img src="https://placehold.co/300x200/ef4444/ffffff?text=Pintura" alt="Pintura" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Pintura Acrílica Premium</h3>
+                    <p class="text-gray-600 text-sm">Amplia gama de colores para tus espacios.</p>
+                    <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm hover:bg-red-600 transition-colors duration-300">Ver Detalles</button>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="card text-center">
+                    <img src="https://placehold.co/300x200/ef4444/ffffff?text=Materiales+Construccion" alt="Materiales de Construcción" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Cemento y Agregados</h3>
+                    <p class="text-gray-600 text-sm">Fundamentales para cualquier obra.</p>
+                    <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm hover:bg-red-600 transition-colors duration-300">Ver Detalles</button>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="cta-button inline-block">Explorar Catálogo Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="nosotros" class="py-16 md:py-24 bg-white">
+        <div class="container text-center">
+            <h2 class="section-title">Sobre Ferretería Portuguesa</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
+                Con años de experiencia en el sector, Ferretería Portuguesa se ha consolidado como el aliado
+                confiable para profesionales y amantes del bricolaje. Nos enorgullecemos de ofrecer productos
+                de alta calidad y un servicio al cliente excepcional.
+            </p>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                Nuestra misión es facilitar tus proyectos, grandes o pequeños, proporcionándote todo lo necesario
+                para hacerlos realidad con éxito.
+            </p>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (Secondary) -->
+    <section class="bg-red-700 text-white py-16 md:py-20 text-center rounded-t-3xl">
+        <div class="container">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para Empezar tu Próximo Proyecto?</h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                Visítanos o contáctanos hoy mismo para obtener la mejor asesoría y los mejores productos.
+            </p>
+            <a href="#contacto" class="cta-button inline-block bg-white text-red-700 hover:bg-gray-100">
+                ¡Contáctanos Ahora!
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 md:py-24 bg-gray-100">
+        <div class="container">
+            <h2 class="section-title">Hablemos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Envíanos un Mensaje</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded-xl w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Tu Nombre Completo">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded-xl w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="tu@email.com">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Mensaje:</label>
+                            <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-xl w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Describe tu consulta o proyecto..."></textarea>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <button type="submit" class="cta-button bg-red-600 hover:bg-red-700">
+                                Enviar Mensaje
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Contact Info -->
+                <div class="card flex flex-col justify-center">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Información de Contacto</h3>
+                    <p class="text-gray-700 mb-4 flex items-center">
+                        <svg class="w-6 h-6 text-red-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                        Zona Industrial I, calle 33 esquina carrera 5, Galpon 2. Barquisimeto - Estado Lara.
+                    </p>
+                    <p class="text-gray-700 mb-4 flex items-center">
+                        <svg class="w-6 h-6 text-red-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        (+58) 0251 237.22.22
+                    </p>
+                    <p class="text-gray-700 mb-4 flex items-center">
+                        <svg class="w-6 h-6 text-red-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        info@ferreteriaportuguesa.com
+                    </p>
+                    <div class="mt-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">Horario de Atención:</h4>
+                        <p class="text-gray-700">Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+                        <p class="text-gray-700">Sábados: 9:00 AM - 1:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 rounded-t-3xl">
+        <div class="container text-center text-gray-400">
+            <p>&copy; 2025 Ferretería Portuguesa. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-white transition-colors duration-300">Política de Privacidad</a>
+                <a href="#" class="hover:text-white transition-colors duration-300">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for mobile menu toggle (optional, for demonstration) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header button');
+            const navMenu = document.querySelector('header nav');
+
+            mobileMenuButton.addEventListener('click', function() {
+                navMenu.classList.toggle('hidden');
+                navMenu.classList.toggle('flex');
+                navMenu.classList.toggle('flex-col');
+                navMenu.classList.toggle('absolute');
+                navMenu.classList.toggle('top-full');
+                navMenu.classList.toggle('left-0');
+                navMenu.classList.toggle('w-full');
+                navMenu.classList.toggle('bg-white');
+                navMenu.classList.toggle('shadow-md');
+                navMenu.classList.toggle('py-4');
+                navMenu.classList.toggle('items-center');
+                navMenu.classList.toggle('space-y-4');
+                navMenu.classList.toggle('md:hidden'); // Ensure it hides on md screens
+            });
+
+            // Close mobile menu when a link is clicked
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!navMenu.classList.contains('hidden')) {
+                        mobileMenuButton.click(); // Simulate click to close menu
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
